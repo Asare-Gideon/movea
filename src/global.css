@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Oswald", sans-serif;
+   font-weight: 700;
+}
+a{
+ text-decoration: none;
+font-family: "Oswald", sans-serif;
+}
+
+p{
+    font-family:"Roboto", sans-serif;
+}
+
+
+ion-icon {
+ visibility:visible !important;
+}
+
+.nav-list::before{
+content: "";
+position: absolute;
+background-color: #cd6218;
+width: 40px;
+height: 5px;
+left: 12px;
+bottom: -19px;
+border-radius: 2px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(17 24 39);
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 20px;
+}
+.nav-item{
+    @apply ml-[-50px]
+}
